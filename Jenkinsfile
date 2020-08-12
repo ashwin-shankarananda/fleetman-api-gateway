@@ -20,14 +20,14 @@ pipeline {
       stage('Build') {
          steps {
            // sh '''mvn clean package'''
-            echo Ashwin Here Building
+            sh 'echo Ashwin Here Building'
          }
       }
 
       stage('Build and Push Image') {
          steps {
            //sh 'docker image build -t ${REPOSITORY_TAG} .'
-            Ashwin here pushing image 
+            sh 'echo Ashwin here pushing image' 
          }
       }
 
